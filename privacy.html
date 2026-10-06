@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salone Bellezza — Norme sulla privacy</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #1a1a2e; background: #f7f7fb; margin: 0; }
+    main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.2em; }
+    h2 { font-size: 1.2rem; margin-top: 1.8em; }
+    a { color: #5b3fd6; }
+    footer { margin-top: 3em; font-size: 0.9rem; color: #555; border-top: 1px solid #ddd; padding-top: 1em; }
+  </style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">← Salone Bellezza</a></p>
+  <h1>Norme sulla privacy</h1>
+  <p>Ultimo aggiornamento: 6 ottobre 2026</p>
+
+  <h2>1. Chi siamo</h2>
+  <p>
+    Salone Bellezza è un'app per la gestione di un salone di parrucchieri, sviluppata da <a href="https://github.com/Laudix64">Laudix64</a>.
+    Per qualsiasi domanda su queste norme: <a href="https://github.com/Laudix64">github.com/Laudix64</a>.
+  </p>
+
+  <h2>2. Quali dati tratta l'app</h2>
+  <p>L'app conserva i dati che l'utente inserisce per gestire il salone:</p>
+  <ul>
+    <li>clienti: nome, cognome, telefono, email, data di nascita, sesso, note;</li>
+    <li>appuntamenti;</li>
+    <li>listino dei servizi (nomi, prezzi, durate);</li>
+    <li>incassi;</li>
+    <li>prodotti di magazzino;</li>
+    <li>impostazioni del salone (nome, indirizzo, orari, giorni di chiusura).</li>
+  </ul>
+  <p>
+    Alla prima configurazione l'utente può caricare clienti, servizi e prodotti da un file preparato da lui.
+    L'app legge quel file dal telefono e non lo invia a nessuno.
+  </p>
+
+  <h2>3. Dove sono conservati</h2>
+  <p>
+    I dati sono conservati <strong>solo sul telefono dell'utente</strong>, in un database locale dell'app.
+    L'app non ha un server proprio. Lo sviluppatore non riceve, non vede e non conserva alcun dato inserito nell'app.
+    L'app non contiene pubblicità né strumenti di analisi o di tracciamento.
+  </p>
+  <p>
+    Se sul telefono è attivo il backup del dispositivo di Android, il sistema operativo può includere i dati
+    dell'app nel backup dell'account Google dell'utente. È una funzione di Android, regolata dalle impostazioni
+    del telefono: l'utente può disattivarla da lì.
+  </p>
+
+  <h2>4. Copie di sicurezza</h2>
+  <p>
+    L'app salva copie di sicurezza dei dati nella memoria del telefono. L'utente può inoltre esportare un file
+    di backup in una cartella del telefono scelta da lui: da quel momento il file è sotto il suo esclusivo controllo.
+  </p>
+
+  <h2>5. Google Drive (facoltativo)</h2>
+  <p>
+    Se l'utente decide di collegare il proprio account Google, l'app carica in automatico le copie di sicurezza
+    nel Google Drive dell'utente (una per giorno, conservando le più recenti). In questo caso:
+  </p>
+  <ul>
+    <li>
+      l'app chiede un solo permesso, limitato ai file creati dall'app stessa (<code>drive.file</code>):
+      può creare, leggere, aggiornare ed eliminare soltanto i propri file di backup, in una cartella
+      dedicata del Drive dell'utente;
+    </li>
+    <li>l'app <strong>non può leggere né modificare</strong> gli altri file presenti nel Drive dell'utente;</li>
+    <li>
+      al momento del collegamento Google comunica all'app il nome, l'indirizzo email e l'immagine del profilo
+      dell'account. L'app usa soltanto l'indirizzo email, per mostrare all'utente quale account è collegato,
+      e lo conserva sul telefono; nome e immagine non vengono usati né conservati;
+    </li>
+    <li>
+      i file di backup restano nel Drive dell'utente: non vengono inviati allo sviluppatore né a terzi,
+      non vengono usati per pubblicità e non vengono ceduti o venduti.
+    </li>
+  </ul>
+  <p>
+    L'uso da parte dell'app delle informazioni ricevute dalle API di Google rispetta le
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Norme sui dati utente dei servizi API di Google</a>,
+    compresi i requisiti di uso limitato.
+  </p>
+  <p>
+    L'utente può scollegare l'account in qualsiasi momento dall'app, oppure revocare l'accesso dalla pagina
+    <a href="https://myaccount.google.com/permissions">Accesso di terze parti</a> del proprio account Google.
+    I file di backup già presenti nel Drive restano finché l'utente non li elimina.
+  </p>
+
+  <h2>6. Altri servizi usati dall'app</h2>
+  <ul>
+    <li>
+      <strong>Aggiornamenti dell'app:</strong> l'app controlla la disponibilità di aggiornamenti tramite il servizio
+      Expo (EAS Update). La richiesta contiene informazioni tecniche (versione dell'app, sistema operativo)
+      e nessun dato del salone o dei clienti.
+    </li>
+    <li>
+      <strong>Chiamate e messaggi ai clienti:</strong> quando l'utente chiama o scrive a un cliente dall'app,
+      la chiamata o il messaggio partono dal telefono dell'utente, tramite il suo operatore telefonico o le sue
+      app di messaggistica (per esempio WhatsApp), alle cui condizioni restano soggetti.
+    </li>
+  </ul>
+
+  <h2>7. Dati dei clienti del salone</h2>
+  <p>
+    Il salone che usa l'app è il titolare dei dati dei propri clienti e ne è responsabile nei loro confronti.
+    L'app è lo strumento con cui il salone li conserva sul proprio telefono.
+  </p>
+
+  <h2>8. Cancellazione dei dati</h2>
+  <ul>
+    <li>Disinstallando l'app, i dati e le copie di sicurezza conservati dall'app sul telefono vengono eliminati.</li>
+    <li>I file esportati in una cartella del telefono e i file nel Google Drive vanno eliminati dall'utente.</li>
+  </ul>
+
+  <h2>9. Modifiche a queste norme</h2>
+  <p>
+    Eventuali modifiche saranno pubblicate su questa pagina, con la nuova data di aggiornamento.
+  </p>
+
+  <footer>
+    Sviluppatore e contatto: <a href="https://github.com/Laudix64">github.com/Laudix64</a> ·
+    <a href="termini.html">Termini di servizio</a>
+  </footer>
+</main>
+</body>
+</html>
